@@ -16,12 +16,14 @@ export default function Register() {
   };
 
   return (
-    <div>
-      <h2>Register</h2>
-      <input placeholder="Name" onChange={e => setName(e.target.value)} />
-      <input placeholder="Role" onChange={e => setRole(e.target.value)} />
-      <input placeholder="Skills (comma separated)" onChange={e => setSkills(e.target.value)} />
-      <button onClick={submit}>Submit</button>
-    </div>
+    <div style={{ maxWidth: "400px" }}>
+  <h2>Register</h2>
+
+  <input placeholder="Name" onChange={e => setName(e.target.value)} />
+  <input placeholder="Role" onChange={e => setRole(e.target.value)} />
+  <input placeholder="Skills" onChange={e => setSkills(e.target.value)} />
+
+  <button onClick={submit}>Submit</button>
+</div>
   );
 }
